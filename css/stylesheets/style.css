@@ -1,0 +1,323 @@
+@charset "UTF-8";
+/*基本フォント　さわらび（Google早期アクセス）*/
+@font-face {
+  font-family: impact;
+  src: url(../../font/AozoraMinchoHeavy.ttf);
+}
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html {
+  margin: 0;
+}
+html body {
+  background: url(../../img/bg.jpg) no-repeat center top;
+  background-attachment: fixed;
+  background-color: #000;
+  color: #fff;
+  font-family: "Sawarabi Gothic", "ヒラギノ角ゴ Pro W3",メイリオ,Osaka,Arial,Verdana ,"ＭＳ Ｐゴシック",sans-serif;
+  font-size: 13px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:visited {
+  color: #fff;
+}
+
+h1, h2, p {
+  cursor: default;
+}
+
+.wrapper {
+  background: #000;
+  max-width: 1020px;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.9);
+}
+
+header {
+  padding: 5px;
+}
+header .logo {
+  position: relative;
+}
+header .logo img:first-child {
+  width: auto;
+  height: 110px;
+}
+header .logo img:nth-child(2) {
+  position: absolute;
+  left: 0;
+  bottom: -45px;
+}
+header .news-sec {
+  border: 1px solid #fff;
+  width: calc(100% - 400px);
+  height: 100px;
+  float: right;
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+header .news-sec > p {
+  border-bottom: 1px dashed #fff;
+  text-align: center;
+}
+header .news-sec p {
+  margin: 0;
+  margin-bottom: 3px;
+}
+header .news-sec .info-line {
+  font-size: 0.8rem;
+  text-decoration: underline;
+  margin: 2px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+header .news-sec .info-line:hover {
+  text-decoration: none;
+}
+
+.title-sec {
+  background: url(../../img/amazonz.png) no-repeat center bottom;
+  background-size: cover;
+  width: 100%;
+  height: 550px;
+  padding: 10px;
+  position: relative;
+  box-shadow: inset 0 0 100px #000, inset 0 0 100px #000, inset 0 0 100px #000, inset 0 0 100px #000;
+}
+.title-sec .onair {
+  width: 330px;
+  position: absolute;
+  right: 0;
+  bottom: 80px;
+  text-align: center;
+}
+.title-sec .onair p {
+  margin: 10px 0;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  text-shadow: 2px  2px 5px #000, -2px  2px 5px #000, 2px -2px 5px #000, -2px -2px 5px #000;
+}
+.title-sec .onair .adv-amazon img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 230px;
+  height: auto;
+}
+.title-sec .onair .adv-amazon img:hover {
+  -webkit-filter: brightness(70%);
+  filter: brightness(70%);
+}
+
+.menu-sec {
+  position: relative;
+}
+.menu-sec .event {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 300px;
+  text-align: center;
+  background: #fff;
+  border-radius: 0 0 20px 20px;
+}
+.menu-sec .event img {
+  width: 300px;
+  height: auto;
+  padding: 10px;
+  border-bottom: 1px solid #000;
+}
+.menu-sec .event a:hover p {
+  text-decoration: underline;
+}
+.menu-sec .event p {
+  display: block;
+  padding: 5px 10px;
+  margin: 0;
+  color: #000;
+  border-radius: 10px;
+}
+
+.main-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.main-menu .menu-item {
+  color: #fff;
+  background: #000;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 10px;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+.main-menu .menu-item:first-letter {
+  font-size: 1.1rem;
+  line-height: 1.2rem;
+}
+.main-menu .menu-item:hover {
+  color: #000;
+  background: #fff;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.middle {
+  margin: 30px 0;
+  border-radius: 100px;
+  height: 400px;
+  position: relative;
+  z-index: 1;
+}
+.middle:before {
+  content: "";
+  background: url(../../img/ama.png) no-repeat top center;
+  background-size: contain;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+  border-radius: 50%;
+  box-shadow: inset 0 0 40px #000, inset 0 0 40px #000, inset 0 0 40px #000, inset 0 0 40px #000;
+  z-index: -1;
+}
+.middle:after {
+  position: absolute;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+.middle .teller {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 0 10px;
+}
+.middle .teller span {
+  color: red;
+}
+.middle .teller h1 {
+  color: #000;
+  font-family: impact;
+  letter-spacing: 4px;
+  font-size: 2.6rem;
+  font-weight: bolder;
+  text-shadow: 2px  2px 5px #fff, -2px  2px 5px #fff, 2px -2px 5px #fff, -2px -2px 5px #fff;
+}
+.middle .teller p {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  text-shadow: 2px  2px 5px #006400, -2px  2px 5px #006400, 2px -2px 5px #006400, -2px -2px 5px #006400;
+}
+.middle .teller p a {
+  color: #FF8C00;
+}
+
+.below {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px 50px;
+}
+.below div {
+  display: inline-block;
+}
+.below .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.video-sec p {
+  text-align: center;
+  font-size: 1.3rem;
+}
+.video-sec iframe {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  max-width: 700px;
+}
+
+.social-sec {
+  text-align: center;
+}
+.social-sec iframe .timeline-Widget {
+  background-color: #000 !important;
+}
+.social-sec a:hover {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: #999;
+}
+.social-sec a p {
+  margin: 10px 10px 10px 0 !important;
+  font-size: 1.2rem;
+}
+.social-sec a p:before {
+  content: url(../../img/twitter_logo150.png);
+  margin-right: 3px;
+}
+
+.link-sec {
+  width: 100%;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+.link-sec img {
+  display: inline-block;
+  width: 232px;
+  height: 60px;
+  margin: 10px 5px;
+}
+
+footer {
+  background: rgba(0, 255, 222, 0.3);
+  padding: 10px 0;
+  text-align: center;
+  -webkit-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.8) inset;
+  -moz-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.8) inset;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.8) inset;
+}
+footer small {
+  margin: 0 auto;
+}
+
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}

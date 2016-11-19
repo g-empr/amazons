@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/*ツイッターウィジェットのみに適用*/
+p {
+  cursor: default;
+  font-family: "Sawarabi Gothic", "ヒラギノ角ゴ Pro W3", "メイリオ" ,Osaka,Arial,Verdana ,"ＭＳ Ｐゴシック",sans-serif;
+}
+
+.timeline-Widget {
+  background-color: #000;
+}
+
+.timeline-ShowMoreButton {
+  background-color: #0f0f0f;
+}
+
+.timeline-Viewport::-webkit-scrollbar {
+  width: 5px;
+  background: #eee;
+}
+
+.timeline-Viewport::-webkit-scrollbar:horizontal {
+  height: 5px;
+}
+
+.timeline-Viewport::-webkit-scrollbar-button {
+  width: 5px;
+  height: 5px;
+  background: #666;
+}
+
+.timeline-Viewport::-webkit-scrollbar-piece {
+  background: #eee;
+}
+
+.timeline-Viewport::-webkit-scrollbar-piece:start {
+  background: #eee;
+}
+
+.timeline-Viewport::-webkit-scrollbar-thumb {
+  background: #333;
+}
+
+.timeline-Viewport::-webkit-scrollbar-corner {
+  background: #333;
+}

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>hoge</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sanitize.css/2.0.0/sanitize.css">
+        <link rel="stylesheet" href="css\stylesheets\style.css">
+        <link href="https://fonts.googleapis.com/earlyaccess/sawarabigothic.css" rel="stylesheet">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="clear">
+                <a href="#" class="logo"><img src="img/amazon.png" alt="仮面ライザーアマゾンズ"><img src="img/pv.png" alt="Amazonオリジナル"></a>
+                <div class="news-sec">
+                    <p>NEWS</p>
+                    <div class="info">
+                        <a href="#"><p class="info-line">【09/07】 前原役・朝日奈さんインタビュー！</p></a>
+                        <a href="#"><p class="info-line">【09/07】KAMENRIDER THE DINER（東京・池袋）に「アマゾンズ期間限定メニュー」が登場！</p></a>
+                        <a href="#"><p class="info-line">【08/31】 福田役・田邊和也さんインタビュー！</p></a>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="above">
+                    <div class="title-sec">
+                        <div class="menu-sec">
+                            <div class="main-menu">
+                                <a href="#" class="menu-item">AMAZONZ</a>
+                                <a href="#" class="menu-item">キャスト</a>
+                                <a href="#" class="menu-item">エピソード</a>
+                                <a href="#" class="menu-item">関連商品</a>
+                                <a href="#" class="menu-item">インタビュー</a>
+                                <a href="#" class="menu-item">スタッフ</a>
+                            </div>
+                            <div class="event">
+                                <a href="http://www.toei.co.jp/event/details/amazons_sp.html" target="_blank">
+                                    <img src="img/1122ev-black.png" alt="イベント">
+                                    <div class="comment"><p>11月22日（火）19:00～ 東京・中野サンプラザホールにて『仮面ライダーアマゾンズ スペシャルイベント』開催！</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="onair">
+                            <p>BS朝日/TOKYO MXにて2016年7月3日より<br>毎週木曜22:30からオンエア！</p>
+                            <p>オリジナル配信版もAmazonプライムビデオにて好評配信中！</p>
+                            <a class="adv-amazon" href="http://amzn.asia/3u8qV0W" target="_blank">
+                                <img src="img/amazon-button.png" alt="amazonへ">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="middle">
+                    <div class="teller">
+                        <h1>仮面ライダー<span>45</span>周年記念プロジェクト、<br>最<span>大</span>級の衝撃。</h1>
+                        <div class="intro">
+                            <p>『仮面ライダーアマゾン』（1974）。仮面ライダー第4作にして、シリーズ最大の異色作が、<br>平成ライダーを築きあげたレジェンドスタッフ × 最強アクションチームによって完全新生！</p>
+                            <p>悠（はるか）と仁、養殖と野生。対照的な２人の“アマゾンライダー”を中心に、<br>様々な登場人物の思惑が交差し、謎が謎を呼ぶストーリー。<br><a href="https://www.amazon.co.jp/b?ie=UTF8&node=3535604051" target="_blank">Amazonプライムビデオ</a>の日本製作オリジナル作品第1弾として、映画を越える次世代の映像への挑戦。</p>
+                            <p>いま、仮面ライダーと映像の歴史が変わる。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="below">
+                    <div class="left">
+                        <div class="video-sec">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Nffq3moyNig" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="link-sec">
+                            <a href=""><img src="" alt="バナー"></a>
+                            <a href=""><img src="" alt="バナー"></a><br>
+                            <a href=""><img src="" alt="バナー"></a>
+                            <a href=""><img src="" alt="バナー"></a>
+                        </div>
+                    </div>
+                    <div class="social-sec">
+                        <a href="https://twitter.com/rider_amazons" class="t-title"><p>公式ツイッターはこちら！</p></a>
+                        <a class="twitter-timeline" data-width="400" data-height="500" data-theme="dark" data-link-color="#19CF86" 
+                        data-chrome="noheader,nofooter,noborders" 
+                        href="https://twitter.com/rider_amazons"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <small>&copy; 2016「仮面ライダーアマゾンズ」製作委員会 &copy; 石森プロ・東映</small>
+            </footer>
+        </div>
+        <script>
+            function changeTwitterWidgetDesign(){
+                var $twitter_widget = $('iframe.twitter-timeline');
+                var $twitter_widget_contents = $twitter_widget.contents();
+
+                if ($twitter_widget.length > 0 && $twitter_widget[0].contentWindow.document.body.innerHTML !== ""){
+                    $twitter_widget_contents.find('head').append('<link href="css/stylesheets/twitter.css" rel="stylesheet" type="text/css">');
+                }
+                else {
+                    setTimeout(function(){
+                    changeTwitterWidgetDesign();
+                    }, 400);
+                }
+            }
+            changeTwitterWidgetDesign();
+        </script>
+    </body>
+</html>
