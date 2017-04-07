@@ -1,4 +1,3 @@
 # amazonz
-test page.
-
+公式ページがアレなので。
 https://g-empr.github.io/amazons/
