@@ -1,4 +1,4 @@
 # amazonz
 test page.
 
-https://g-empr.github.io/
+https://g-empr.github.io/amazons/
