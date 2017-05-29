@@ -1,4 +1,4 @@
-# Amazonz
+# Amazons
 ## なんか変じゃね
 なに[この](http://www.superhero-year.com/amazons/season1.html)なに。
 
